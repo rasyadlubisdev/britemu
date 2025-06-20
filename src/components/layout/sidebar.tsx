@@ -19,6 +19,8 @@ import {
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { UnreadMessageBadge } from "@/components/messaging/unread-message-badge";
+import LogoBritemu from "../../../public/logo-britemu.svg";
+import Image from "next/image";
 
 interface SidebarProps {
   collapsed: boolean;
@@ -105,12 +107,13 @@ export function Sidebar({ collapsed, setCollapsed, pathname }: SidebarProps) {
                 collapsed ? "justify-center" : ""
               }`}
             >
-              <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg">
-                A
-              </div>
+              {/* <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg">
+                B
+              </div> */}
               {!collapsed && (
                 <span className="ml-3 font-semibold text-lg">
-                  AchieveConnect
+                  {/* Britemu */}
+                  <Image src="logo-britemu.svg" className="w-auto h-8 logo-color" width={383} height={96} alt="startup logo" />
                 </span>
               )}
             </Link>

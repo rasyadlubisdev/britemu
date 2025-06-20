@@ -8,7 +8,7 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AchieveConnect",
+  title: "Britemu",
   description: "Document your journey to becoming a high achiever",
 };
 
